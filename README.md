@@ -19,6 +19,10 @@ chmod+x uninstall.sh
 ```
 This will remove the script from your ~/.local/bin folder.
 
+## Limitations:
+
+Currently the output of a single querry is limited to around 800 characters. To extend the length of the output I would have to implement [streaming](https://blog.cloudflare.com/workers-ai-streaming), which is something that I'd like to try in the future. Then the script would have to be rewritten using a programming language.
+
 ## Usage:
 
 ```
