@@ -1,4 +1,4 @@
-Bashbot is a script that allows you to interact with an AI-powered chatbot. The chatbot is a Cloudflare Worker that is set to use the [deepseek-coder-6.7b-instruct-awq LLM](https://developers.cloudflare.com/workers-ai/models/deepseek-coder-6.7b-instruct-awq/). The Cloudflare free plan is quite generous therefore I am sharing my chatbot with the world, hoping it will come in handy to someone.   
+Bashbot is a script that allows you to interact with an AI-powered chatbot from the Linux terminal. The chatbot is a Cloudflare Worker that is set to use the [deepseek-coder-6.7b-instruct-awq LLM](https://developers.cloudflare.com/workers-ai/models/deepseek-coder-6.7b-instruct-awq/). The Cloudflare free plan is quite generous therefore I am sharing my chatbot with the world, hoping it will come in handy to someone.   
 
 **Installation:**
 ```
@@ -9,13 +9,18 @@ chmod +x install.sh
 ```
 This will make the Bashbot script executable and copy it to your ~/.local/bin folder. As a result you will be able to call Bashbot by typing "bashbot" in your terminal. 
 
-To uninstall:  
+**To uninstall:**    
+```
 chmod+x uninstall.sh  
 ./uninstall.sh  
-
+```
 This will remove the script from your ~/.local/bin folder.
 
+```
+bashbot --help
+```
 
+```
 Usage: bashbot [options]  
 Options:  
   --help            Display this help message  
@@ -34,5 +39,5 @@ Examples:
   bashbot -m "Hello, Bashbot!"     # Sends a message to Bashbot  
   bashbot --help                   # Displays this help message  
   bashbot -v                       # Displays the version of Bashbot  
-
+```
 
